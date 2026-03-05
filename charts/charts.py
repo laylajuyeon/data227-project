@@ -113,4 +113,10 @@ bl_choropleth = alt.Chart(song_streams_by_country).transform_filter(
     tooltip=['name:N', alt.Tooltip('mean_spc:Q', format='.2f', title='Avg Streams')]
 ).project('equalEarth')
 
-dashboard = ((background+other_choropleth)&other_line)|((background+bl_choropleth)&bl_line)
+other_map = (background+other_choropleth)
+bl_map = (background+bl_choropleth)
+
+other = other_map & other_line
+bl = bl_map & bl_line
+
+dashboard = other|bl
