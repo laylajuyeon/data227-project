@@ -1,5 +1,5 @@
 import streamlit as st
-from charts.charts import dashboard
+from charts.charts import other_line
 
 st.set_page_config(page_title="Spotify Charts: What Makes a Hit?", layout="wide")
 
@@ -42,5 +42,5 @@ st.write(
     "- **Methodology**: Key details about the dataset, filtering decisions, and limitations.\n"
 )
 
-st.altair_chart(dashboard)
+st.altair_chart(other_line)
 
