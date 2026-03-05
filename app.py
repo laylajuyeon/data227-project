@@ -3,17 +3,9 @@ from charts.charts import other_line
 
 st.set_page_config(page_title="Spotify Charts: What Makes a Hit?", layout="wide")
 
-st.markdown("""
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
-    html, body, [class*="css"], h1, h2, h3, h4, h5, h6, p, li, span, div, button, input, label {
-        font-family: 'Lora', serif !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 st.title("The Anatomy of a Mega-Hit: What Does It Really Take to Top Spotify's Charts?")
-st.image('images/drake_and_weeknd.jpg', use_container_width=True)
+st.image('images/drake_and_weeknd.jpg')
 st.caption("Drake (left) and The Weeknd (right). Source: Sky News")
 st.write(
     """
